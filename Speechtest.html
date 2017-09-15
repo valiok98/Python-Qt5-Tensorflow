@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<script language="javascript">
+function RefreshImage(){
+document.pic0.src="03.png?a=" + String(Math.random()*99999999);
+setTimeout('RefreshImage()',50);
+}
+</script>
+<body onload="RefreshImage()">
+<img name="pic0" src="03.png" style="position: center; height: 900px ; width: 1000px">
+</body>
+</html>
