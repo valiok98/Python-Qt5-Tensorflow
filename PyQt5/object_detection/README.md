@@ -4,7 +4,8 @@ Here is an image of the interface:
 
 <img src="final_product.png" width=656 height=450>
   
- <h1>You can check my video on the topic here : <a href="https://www.youtube.com/watch?v=G1dY3BvuuWw"/></h1>
+ <h1>You can check my video on the topic here : </h1>
+ <a href="https://www.youtube.com/watch?v=G1dY3BvuuWw"/>Link to video</a>
 
 
 # Tensorflow Object Detection API
