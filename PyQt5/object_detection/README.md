@@ -1,3 +1,11 @@
+The model located here belongs entirely to the Tensorflow Team. I am just using it according to their license argeement. 
+My file is currently called ImageRecognition.py
+Here is an image of the interface:
+
+  <img src="final_product.jpg" width=656 height=450>
+  
+ <h1>You can check my video on the topic here : <a href="https://www.youtube.com/watch?v=G1dY3BvuuWw"/></h1>
+
 
 # Tensorflow Object Detection API
 Creating accurate machine learning models capable of localizing and identifying
