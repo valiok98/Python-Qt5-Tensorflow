@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+User data
+{% endblock %}
+
+
+{% block base%}
+
+{% for item in user.item_set.all %}
+    <ul>
+        <li><img src="{{ item.item_link }}" alt="no_img"/></li>
+        <li>{{item.item_name}}</li>
+    </ul>
+{% endfor %}
+
+{% endblock %}

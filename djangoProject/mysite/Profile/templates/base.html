@@ -1,0 +1,55 @@
+{% load staticfiles %}
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Satisfy" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>{% block title %}My page{% endblock %}</title>
+</head>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ase">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="{% url 'Profile:profile' %}">My site</a>
+        </div>
+    <!-- Items -->
+        <div class="collapse navbar-collapse" id="ase">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="{% url 'Profile:profile' %}">
+                        <span class="glyphicon glyphicon-cd" aria-expanded="false" aria-hidden="true"></span>&nbsp; Albums
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="{% url 'Profile:profile' %}">
+                        <span class="glyphicon glyphicon-ok" aria-expanded="false" aria-hidden="true"></span>&nbsp; Music
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-cd" aria-expanded="false" aria-hidden="true"></span>&nbsp; Albums
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+{% block base %}
+{% endblock %}
+
+
