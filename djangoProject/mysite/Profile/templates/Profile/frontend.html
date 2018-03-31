@@ -1,13 +1,17 @@
-{% extends 'base.html' %}
+{% extends 'Profile/base.html' %}
+
+<link rel="stylesheet" type="text/css" href="Profile/_Profile.css" />
 
 {% block title %}
 All users
 {% endblock %}
 
 {% block base %}
+<body>
 {% for user in all_users %}
     <ul>
         <li><a href="{% url 'Profile:users' user.id %}">{{user.f_name}} {{user.l_name}}</a></li>
     </ul>
 {% endfor %}
+</body>
 {% endblock %}

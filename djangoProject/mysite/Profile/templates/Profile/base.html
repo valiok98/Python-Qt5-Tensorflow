@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width , initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Satisfy" rel="stylesheet">
-<script
+    <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
@@ -35,15 +35,28 @@
 
                 <li class="">
                     <a href="{% url 'Profile:profile' %}">
-                        <span class="glyphicon glyphicon-ok" aria-expanded="false" aria-hidden="true"></span>&nbsp; Music
+                        <span class="glyphicon glyphicon-ok" aria-expanded="false" aria-hidden="true"/></span>&nbsp; Music
                     </a>
                 </li>
 
                 <li class="">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-cd" aria-expanded="false" aria-hidden="true"></span>&nbsp; Albums
+                    <a href="{% url 'Profile:signin' %}">
+                        <span class="glyphicon glyphicon-chevron-right" aria-expanded="false" aria-hidden="true"/></span>&nbsp; Sign in
                     </a>
                 </li>
+
+                <li class="">
+                    <a href="{% url 'Profile:signup' %}">
+                        <span class="glyphicon glyphicon-chevron-up" aria-expanded="false" aria-hidden="true"/></span>&nbsp; Sign up
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="{% url 'Profile:edit' %}">
+                        <span class="glyphicon glyphicon-chevron-sun" aria-expanded="false" aria-hidden="true"/></span>&nbsp; Edit
+                    </a>
+                </li>
+
             </ul>
         </div>
 

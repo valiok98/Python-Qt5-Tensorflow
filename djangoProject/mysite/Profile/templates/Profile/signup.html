@@ -1,0 +1,32 @@
+{% extends 'Profile/base.html' %}
+{% block base %}
+<div class="col-sm-3 container ">
+    <form method="POST" action="#">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="f_name">Enter first name:</label>
+            <input id="f_name" class="form-control" placeholder="First name" name="f_name">
+        </div>
+
+        <div class="form-group">
+            <label for="l_name">Enter last name:</label>
+            <input id="l_name" class="form-control" placeholder="Last name" name="l_name">
+        </div>
+
+        <div class="form-group">
+            <label for="nick">Enter nickname:</label>
+            <input id="nick" class="form-control" placeholder="Enter nickname" name="nick">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Enter age:</label>
+            <input id="age" class="form-control" placeholder="Enter age" name="age">
+        </div>
+
+        <button type="submit" class="btn btn-default">Register</button>
+        {{ form.as_p }}
+    </form>
+</div>
+{% endblock %}
+
+

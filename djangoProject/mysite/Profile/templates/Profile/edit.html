@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% extends 'Profile/base.html' %}
+        {% block title %}Edit{% endblock %}
+    </head>
+
+
+
+
+   {% block base %}
+  <body>
+<ul>
+    {% for user in profiles %}
+    <li>
+        <a href="{% url 'Profile:edit_person' user.id %}"><h2>{{ user.f_name }} {{ l_name }}</h2></a>
+    </li>
+    {% endfor %}
+
+</ul>
+
+</body>
+{% endblock %}
+
+</html>
+

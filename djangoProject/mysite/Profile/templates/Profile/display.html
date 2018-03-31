@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'Profile/base.html' %}
 
 {% block title %}
 User data
@@ -6,7 +6,10 @@ User data
 
 
 {% block base%}
-
+<form method="POST" action="{% url 'Profile:delete' user.id %}">
+                {% csrf_token %}
+                <button type="submit">Delete</button>
+</form>
 {% for item in user.item_set.all %}
     <ul>
         <li><img src="{{ item.item_link }}" alt="no_img"/></li>
